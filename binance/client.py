@@ -866,10 +866,6 @@ class Client(object):
             # increment next call by our timeframe
             start_ts += timeframe
 
-            # sleep after every 3rd call to be kind to the API
-            if idx % 3 == 0:
-                time.sleep(1)
-
         return output_data
 
     def get_historical_klines_generator(self, symbol, interval, start_str, end_str=None):
@@ -946,10 +942,6 @@ class Client(object):
 
             # increment next call by our timeframe
             start_ts += timeframe
-
-            # sleep after every 3rd call to be kind to the API
-            if idx % 3 == 0:
-                time.sleep(1)
 
     def get_avg_price(self, **params):
         """Current average price for a symbol.

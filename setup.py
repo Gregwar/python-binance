@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name='python-binance',
+    name='python-binance-nosleep',
     version='0.7.9',
     packages=['binance'],
     description='Binance REST API python implementation',
